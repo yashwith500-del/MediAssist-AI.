@@ -1,0 +1,224 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>MediAssist AI | Health Dashboard</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header class="top-header">
+
+        <div class="brand">
+            <div class="brand-icon">✚</div>
+
+            <div>
+                <h1>MediAssist AI</h1>
+                <p>Intelligent Health Information Assistant</p>
+            </div>
+        </div>
+
+        <div class="header-info">
+            <span id="server-status" class="status-badge">
+                Connecting...
+            </span>
+
+            <span id="live-clock">Loading time...</span>
+        </div>
+
+    </header>
+
+
+    <main class="container">
+
+        <section class="welcome-section">
+
+            <div>
+                <span class="section-tag">HEALTH DASHBOARD</span>
+
+                <h2>Welcome to MediAssist AI</h2>
+
+                <p>
+                    Explore health information and monitor
+                    sample vital readings.
+                </p>
+            </div>
+
+        </section>
+
+
+        <section class="section-heading">
+
+            <div>
+                <h2>Vital Signs Overview</h2>
+
+                <p>Current dashboard readings</p>
+            </div>
+
+            <button id="refresh-button" class="secondary-button">
+                ↻ Refresh
+            </button>
+
+        </section>
+
+
+        <section class="dashboard">
+
+            <article class="vital-card">
+
+                <div class="vital-icon heart">♥</div>
+
+                <h3>Heart Rate</h3>
+
+                <div class="vital-value">
+                    <span id="heart-rate">--</span>
+                    <small>BPM</small>
+                </div>
+
+                <p>Sample heart rate</p>
+
+            </article>
+
+
+            <article class="vital-card">
+
+                <div class="vital-icon temperature">🌡</div>
+
+                <h3>Temperature</h3>
+
+                <div class="vital-value">
+                    <span id="temperature">--</span>
+                    <small>°C</small>
+                </div>
+
+                <p>Sample temperature</p>
+
+            </article>
+
+
+            <article class="vital-card">
+
+                <div class="vital-icon oxygen">◉</div>
+
+                <h3>Blood Oxygen</h3>
+
+                <div class="vital-value">
+                    <span id="spo2">--</span>
+                    <small>%</small>
+                </div>
+
+                <p>Sample SpO2 reading</p>
+
+            </article>
+
+        </section>
+
+
+        <section class="data-notice">
+
+            <div>
+                <strong>Sensor information</strong>
+
+                <p id="data-mode">
+                    Waiting for readings...
+                </p>
+
+                <p id="last-updated">
+                    Last updated: Not yet
+                </p>
+            </div>
+
+            <span class="sample-badge">SIMULATED DATA</span>
+
+        </section>
+
+
+        <section class="assistant-section">
+
+            <div class="assistant-header">
+
+                <div class="assistant-avatar">✚</div>
+
+                <div>
+                    <span class="section-tag">AI HEALTH ASSISTANT</span>
+
+                    <h2>MediAssist AI Assistant</h2>
+
+                    <p>
+                        Ask questions and explore health information
+                        using Gemini AI.
+                    </p>
+                </div>
+
+            </div>
+
+
+            <div id="chat-messages" aria-live="polite">
+
+                <div class="bot-message">
+                    <strong>MediAssist AI</strong>
+
+                    <div class="ai-answer">
+                        Hello! Welcome to MediAssist AI.
+
+                        I can help explain general health concepts,
+                        blood pressure, heart rate, symptoms and
+                        other health-related topics.
+
+                        What would you like to learn?
+                    </div>
+                </div>
+
+            </div>
+
+
+            <form id="chat-form" class="chat-input">
+
+                <input
+                    type="text"
+                    id="user-question"
+                    placeholder="Ask your health-related question..."
+                    autocomplete="off"
+                    maxlength="10000"
+                    required
+                >
+
+                <button type="submit" id="send-button">
+                    Send ➤
+                </button>
+
+            </form>
+
+
+            <p class="medical-disclaimer">
+                Educational information only. MediAssist AI
+                does not provide confirmed medical diagnoses
+                or replace professional medical care.
+            </p>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <h3>MediAssist AI</h3>
+
+        <p>Intelligent Health Monitoring and Educational Assistant</p>
+
+        <p>© 2026 MediAssist AI | Educational Prototype</p>
+
+    </footer>
+
+
+    <script src="js/app.js"></script>
+
+</body>
+</html>

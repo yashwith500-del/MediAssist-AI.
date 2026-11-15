@@ -1,0 +1,22 @@
+
+# API keys and environment files
+.env
+.env.*
+!.env.example
+
+# Python virtual environments
+venv/
+.venv/
+
+# Python generated files
+__pycache__/
+*.pyc
+*.pyo
+
+# IDE files
+.vscode/
+.idea/
+
+# Operating system files
+.DS_Store
+Thumbs.db
